@@ -7,7 +7,7 @@ const soundControl = document.querySelector('#sound-control');
 const motionMarkVideo = document.querySelector('#motion-mark-video');
 const motionMarkControl = document.querySelector('#motion-mark-control');
 
-addEventListener('load', () => {
+addEventListener('DOMContentLoaded', () => {
   window.setTimeout(() => document.querySelector('.intro').classList.add('is-done'), 350);
 });
 
@@ -297,6 +297,6 @@ cuzzVoice.addEventListener('click', () => {
   else speakCuzz('Natural voice on.');
 });
 
-addEventListener('load', () => {
+addEventListener('DOMContentLoaded', () => {
   if (window.LIL_CUZZ_VOICE?.enabled) window.setTimeout(() => getLocalTts(), 1200);
 });
