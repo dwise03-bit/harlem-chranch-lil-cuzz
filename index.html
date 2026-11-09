@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Harlem Chranch — LIL CUZZ AI Assistant. Enter the world of Chranch NYC.">
+  <meta name="theme-color" content="#050507">
+  <title>Harlem Chranch — LIL CUZZ AI Assistant</title>
+  <link rel="preload" href="assets/hero-poster.jpg" as="image">
+  <link rel="stylesheet" href="styles.css?v=5">
+</head>
+<body>
+  <div class="intro" aria-hidden="true"><div class="intro-mark">CHRANCH<span>NYC</span></div><div class="intro-line"></div><p>UPTOWN SIGNAL / 2026</p></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <div class="media-wrap" data-parallax>
+    <video id="hero-video" class="hero-video" poster="assets/hero-poster.jpg" muted loop playsinline preload="metadata" aria-label="Harlem Chranch cinematic visual">
+      <source src="assets/harlem-cranch-hero.mp4" type="video/mp4">
+    </video>
+    <div class="scrim" aria-hidden="true"></div>
+  </div>
+  <audio id="soundtrack" preload="metadata" loop><source src="assets/chranch-soundtrack.m4a" type="audio/mp4"></audio>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="nav">
+    <a class="wordmark" href="#top" aria-label="Harlem Chranch home">CHRANCH<span>NYC</span></a>
+    <nav aria-label="Primary navigation">
+      <a href="#manifesto">About</a>
+      <a href="#chapters">Scenes</a>
+      <a href="#film">Film</a>
+      <a href="https://www.facebook.com/cranchnyc" target="_blank" rel="noopener">Facebook</a>
+      <a class="nav-cta" href="https://www.youtube.com/channel/UCHGKJXh67nrzMZ6rF15ikDQ" target="_blank" rel="noopener">YouTube ↗</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="ambient" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Harlem, New York · after dark</p>
+        <h1 id="hero-title"><span>Harlem</span> <em>Chranch</em></h1>
+        <div class="hero-bottom">
+          <p class="dek"><strong>LIL CUZZ</strong>—your digital day one, built in Harlem and moving at city speed.</p>
+          <a class="primary-button" href="https://www.youtube.com/watch?v=tTyPr8jzxw8" target="_blank" rel="noopener">
+            <span class="play-icon" aria-hidden="true">▶</span>
+            Watch the film
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-meta" aria-label="Channel information">
+        <span>01 / CHRANCH NYC</span>
+        <span>@Cranch11102</span>
+        <span>588 subscribers</span>
+      </div>
+
+      <div class="timecode" aria-hidden="true"><span id="time-current">00:00</span><i><b id="film-progress"></b></i><span>00:35</span></div>
+
+      <button class="motion-control" id="motion-control" type="button" aria-label="Pause background video" aria-pressed="false">
+        <span class="pause-bars" aria-hidden="true"></span><span class="control-label">Pause</span>
+      </button>
+      <button class="sound-control" id="sound-control" type="button" aria-label="Turn soundtrack on" aria-pressed="false"><span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i></span><span>Sound off</span></button>
+      <a class="scroll-cue" href="#manifesto"><span>Scroll to enter</span><i aria-hidden="true"></i></a>
+    </section>
+
+    <section class="chapters reveal" id="chapters" aria-labelledby="chapters-title">
+      <div class="chapters-head"><p class="section-tag">Thirty-five seconds uptown</p><h2 id="chapters-title">Pick a<br>moment.</h2></div>
+      <div class="chapter-list" role="list" aria-label="Video scenes">
+        <button class="chapter is-active" type="button" data-time="0" aria-pressed="true"><span>01</span><strong>Night Ride</strong><small>00:00</small></button>
+        <button class="chapter" type="button" data-time="9" aria-pressed="false"><span>02</span><strong>Blue Room</strong><small>00:09</small></button>
+        <button class="chapter" type="button" data-time="18" aria-pressed="false"><span>03</span><strong>Face Card</strong><small>00:18</small></button>
+        <button class="chapter" type="button" data-time="27" aria-pressed="false"><span>04</span><strong>Outside</strong><small>00:27</small></button>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div><span>HARLEM MADE</span><i>✦</i><span>BLUE HOUR</span><i>✦</i><span>NO PERMISSION NEEDED</span><i>✦</i><span>CHRANCH NYC</span><i>✦</i><span>HARLEM MADE</span><i>✦</i><span>BLUE HOUR</span><i>✦</i><span>NO PERMISSION NEEDED</span><i>✦</i><span>CHRANCH NYC</span><i>✦</i></div>
+    </div>
+
+    <section class="motion-mark reveal" id="motion-mark" aria-labelledby="motion-mark-title">
+      <video id="motion-mark-video" poster="assets/dirty-gang-poster.jpg" muted loop playsinline preload="metadata" aria-label="38st Dirty Gang animated blue rose and chrome emblem">
+        <source src="assets/dirty-gang-motion.mp4" type="video/mp4">
+      </video>
+      <div class="motion-mark-scrim" aria-hidden="true"></div>
+      <div class="motion-mark-copy">
+        <p class="section-tag">38ST / MOTION MARK 001</p>
+        <h2 id="motion-mark-title">Blue runs<br><span>through it.</span></h2>
+        <p>A second signal from the same world—chrome, roses, webs, and Uptown pressure.</p>
+      </div>
+      <div class="motion-mark-index" aria-hidden="true"><span>NEW VISUAL</span><span>00:08 LOOP</span></div>
+      <button class="motion-mark-control" id="motion-mark-control" type="button" aria-label="Pause motion mark" aria-pressed="false">
+        <span class="pause-bars" aria-hidden="true"></span><span class="control-label">Pause</span>
+      </button>
+    </section>
+
+    <section class="manifesto reveal" id="manifesto" aria-labelledby="manifesto-title">
+      <p class="section-tag">Built uptown · thinking forward</p>
+      <h2 id="manifesto-title">Street instinct.<br><span>Future in motion.</span></h2>
+      <div class="manifesto-grid">
+        <p>No corporate voice. No clean-room personality. LIL CUZZ moves like family—quick with the answer, real with the energy.</p>
+        <div class="signal-card">
+          <span class="signal">UPTOWN / ALL DAY</span>
+          <strong>212°</strong>
+          <small>Creativity without permission.</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="cuzz reveal" aria-labelledby="cuzz-title">
+      <div class="photo-stack" aria-label="Frames from the Chranch NYC film">
+        <figure><img src="assets/frame-night.jpg" alt="Night scene from the Chranch NYC film"><figcaption>06 SEC / NIGHT</figcaption></figure>
+        <figure><img src="assets/frame-face.jpg" alt="Close portrait from the Chranch NYC film"><figcaption>18 SEC / FACE</figcaption></figure>
+        <figure><img src="assets/frame-outside.jpg" alt="Outside scene from the Chranch NYC film"><figcaption>28 SEC / OUTSIDE</figcaption></figure>
+      </div>
+      <div class="cuzz-copy">
+        <p class="section-tag">LIL CUZZ / THE DAY ONE</p>
+        <h2 id="cuzz-title">Made to<br><em>move with you.</em></h2>
+        <p>Ideas, moves, answers, and whatever comes next. Fast when it needs to be. Honest when it matters.</p>
+        <div class="cuzz-status"><span>HARLEM, NEW YORK</span><span>EST. 2026</span></div>
+      </div>
+    </section>
+
+    <section class="film reveal" id="film" aria-labelledby="film-title">
+      <div class="film-copy">
+        <p class="section-tag">The first visual</p>
+        <h2 id="film-title">Outside.<br>No filter.</h2>
+        <p>Watch the latest Chranch NYC visual and subscribe for what comes next.</p>
+        <a class="text-link" href="https://www.youtube.com/watch?v=tTyPr8jzxw8" target="_blank" rel="noopener">Open on YouTube <span>↗</span></a>
+      </div>
+      <a class="film-frame" href="https://www.youtube.com/watch?v=tTyPr8jzxw8" target="_blank" rel="noopener" aria-label="Watch Harlem Chranch on YouTube">
+        <img src="assets/hero-poster.jpg" alt="Harlem Chranch in a night-time street scene" width="1440" height="1440">
+        <span class="film-play" aria-hidden="true">PLAY</span>
+        <span class="frame-index">FILM 001 / 00:35</span>
+      </a>
+    </section>
+    <section class="finale reveal" aria-labelledby="finale-title">
+      <p class="section-tag">The signal stays on</p>
+      <h2 id="finale-title">Tap in.<br><span>Stay connected.</span></h2>
+      <div class="finale-actions"><a class="primary-button" href="https://www.youtube.com/channel/UCHGKJXh67nrzMZ6rF15ikDQ" target="_blank" rel="noopener">Subscribe on YouTube ↗</a><a href="https://www.facebook.com/cranchnyc" target="_blank" rel="noopener">Follow Chranch NYC on Facebook ↗</a></div>
+      <div class="finale-mark" aria-hidden="true">212 / NYC</div>
+    </section>
+  </main>
+
+  <aside class="cuzz-chat" aria-label="LIL CUZZ AI Assistant">
+    <button class="cuzz-launcher" id="cuzz-launcher" type="button" aria-expanded="false" aria-controls="cuzz-panel">
+      <span class="cuzz-launcher-avatar"><img src="assets/lil-cuzz-digital-twin.png?v=2" alt=""></span>
+      <span><strong>Ask LIL CUZZ</strong><small>Voice guided · online</small></span>
+      <i aria-hidden="true">↗</i>
+    </button>
+    <section class="cuzz-panel" id="cuzz-panel" aria-labelledby="cuzz-chat-title" hidden>
+      <div class="cuzz-twin-stage" aria-label="LIL CUZZ digital twin character">
+        <img src="assets/lil-cuzz-digital-twin.png?v=2" alt="Full-body LIL CUZZ digital twin in blue and black 38ST clothing, seated in his powered wheelchair">
+        <div class="cuzz-voice-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      </div>
+      <div class="cuzz-console">
+      <header class="cuzz-panel-head">
+        <div class="cuzz-character"><img src="assets/lil-cuzz-digital-twin.png?v=2" alt="LIL CUZZ character portrait"><span aria-hidden="true"></span></div>
+        <div><p>YOUR DIGITAL DAY ONE</p><h2 id="cuzz-chat-title">LIL CUZZ</h2></div>
+        <button id="cuzz-close" type="button" aria-label="Close LIL CUZZ assistant">×</button>
+      </header>
+      <div class="cuzz-transcript" id="cuzz-transcript" aria-live="polite">
+        <div class="cuzz-message is-cuzz"><span>CUZZ</span><p>Yo. I’m tapped in. You need the story, the visual, or the next move?</p></div>
+      </div>
+      <div class="cuzz-guides" aria-label="Suggested questions">
+        <button type="button" data-cuzz-prompt="story">What’s Chranch?</button>
+        <button type="button" data-cuzz-prompt="visual">Run the visual</button>
+        <button type="button" data-cuzz-prompt="assistant">What can you do?</button>
+      </div>
+      <form class="cuzz-input" id="cuzz-form">
+        <label class="sr-only" for="cuzz-question">Message LIL CUZZ</label>
+        <input id="cuzz-question" name="question" autocomplete="off" placeholder="Talk to Cuzz…" maxlength="160">
+        <button type="submit" aria-label="Send message">Send</button>
+      </form>
+      <button class="cuzz-voice" id="cuzz-voice" type="button" aria-pressed="true"><span aria-hidden="true">◖</span> Natural voice loading…</button>
+      </div>
+    </section>
+  </aside>
+
+  <footer>
+    <a class="wordmark" href="#top">CHRANCH<span>NYC</span></a>
+    <p>Harlem made. Future ready.</p>
+    <div class="footer-links"><a href="https://www.facebook.com/cranchnyc" target="_blank" rel="noopener">Facebook</a><a href="https://www.youtube.com/channel/UCHGKJXh67nrzMZ6rF15ikDQ" target="_blank" rel="noopener">YouTube ↗</a></div>
+  </footer>
+  <script src="voice-config.js?v=6"></script>
+  <script src="script.js?v=6"></script>
+</body>
+</html>
