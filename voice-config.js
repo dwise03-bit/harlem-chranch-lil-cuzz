@@ -3,6 +3,6 @@ window.LIL_CUZZ_VOICE = {
   enabled: true,
   provider: 'kokoro-js',
   model: 'onnx-community/Kokoro-82M-v1.0-ONNX',
-  voice: 'am_adam',
-  speed: 0.95
+  voice: 'am_fenrir',
+  speed: 0.98
 };

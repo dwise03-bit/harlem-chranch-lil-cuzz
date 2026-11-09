@@ -143,7 +143,7 @@ const cuzzTranscript = document.querySelector('#cuzz-transcript');
 const cuzzForm = document.querySelector('#cuzz-form');
 const cuzzQuestion = document.querySelector('#cuzz-question');
 const cuzzVoice = document.querySelector('#cuzz-voice');
-let cuzzVoiceOn = true;
+let cuzzVoiceOn = false;
 
 const cuzzReplies = {
   story: 'Chranch NYC is Harlem pressure with a future-facing mind. Real footage. Real motion. No clean-room personality.',
@@ -167,7 +167,7 @@ async function getLocalTts() {
   if (!localTtsPromise) {
     cuzzVoice.innerHTML = '<span aria-hidden="true">◖</span> Natural voice loading…';
     localTtsPromise = import('https://cdn.jsdelivr.net/npm/kokoro-js/+esm').then(async ({ KokoroTTS }) => {
-      const device = navigator.gpu ? 'webgpu' : 'wasm';
+      const device = 'wasm';
       const tts = await KokoroTTS.from_pretrained(window.LIL_CUZZ_VOICE.model, {
         dtype: 'q8',
         device
@@ -258,7 +258,6 @@ cuzzLauncher.addEventListener('click', () => {
   cuzzLauncher.setAttribute('aria-expanded', 'true');
   cuzzLauncher.hidden = true;
   window.setTimeout(() => { cuzzPanel.classList.add('is-open'); cuzzQuestion.focus(); }, 20);
-  speakCuzz('Yo. I’m tapped in. You need the story, the visual, or the next move?');
 });
 
 cuzzClose.addEventListener('click', () => {
@@ -297,6 +296,6 @@ cuzzVoice.addEventListener('click', () => {
   else speakCuzz('Natural voice on.');
 });
 
-addEventListener('DOMContentLoaded', () => {
-  if (window.LIL_CUZZ_VOICE?.enabled) window.setTimeout(() => getLocalTts(), 1200);
+addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && !cuzzPanel.hidden) cuzzClose.click();
 });

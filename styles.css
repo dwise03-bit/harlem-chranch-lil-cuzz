@@ -127,3 +127,15 @@ html{background:#02040a}body{background:transparent}
 .cuzz-input input{background:transparent;padding-left:1rem}
 .cuzz-input button{width:42px;height:42px;align-self:center;margin-right:3px;padding:0;border-radius:50%}
 @media(max-width:700px){.cuzz-panel{box-shadow:0 24px 60px rgba(0,0,0,.62);border-radius:22px}.cuzz-twin-stage{border:0}}
+
+/* Compact artist concierge */
+.cuzz-panel{width:min(460px,calc(100vw - 2rem));height:min(570px,calc(100svh - 2rem));display:block;position:relative;background:linear-gradient(180deg,rgba(3,5,11,.94),rgba(2,8,22,.98));border-radius:28px}
+.cuzz-twin-stage{position:absolute;inset:0 0 142px;overflow:hidden}
+.cuzz-twin-stage>img{width:100%;height:100%;bottom:-3%;object-position:center bottom}
+.cuzz-voice-wave{top:1.4rem;left:1.4rem;right:auto}
+.cuzz-console{position:absolute;z-index:5;left:.8rem;right:.8rem;bottom:.8rem;height:auto;padding:.55rem .65rem .7rem;background:rgba(3,5,12,.82);backdrop-filter:blur(16px);border-radius:22px}
+.cuzz-panel-head{height:58px;grid-template-columns:42px 1fr 44px;padding:0}.cuzz-character{width:40px;height:40px}.cuzz-panel-head h2{font-size:1.1rem}.cuzz-panel-head p{font-size:.46rem}
+.cuzz-transcript{height:72px;padding:.25rem 0;overflow-y:auto}.cuzz-message{max-width:100%;margin:0}.cuzz-message span{display:none}.cuzz-message p,.cuzz-message.is-user p{font-size:.82rem;line-height:1.4;text-align:left;color:#eeeae1}
+.cuzz-guides{display:none}.cuzz-input{margin:.45rem 0 0}.cuzz-input input{height:44px}.cuzz-input button{width:44px;height:44px;margin:0}
+.cuzz-voice{min-height:44px;height:44px;margin:.25rem 0 0;text-align:left}
+@media(max-width:700px){.cuzz-panel{width:min(390px,calc(100vw - 1.5rem));height:min(540px,calc(100svh - 1.5rem));display:block}.cuzz-twin-stage{position:absolute;inset:0 0 142px}.cuzz-twin-stage>img{width:100%;height:100%;left:50%;bottom:-3%}.cuzz-console{left:.6rem;right:.6rem;bottom:.6rem}.cuzz-panel-head{grid-template-columns:42px 1fr 44px}.cuzz-transcript{height:64px}.cuzz-input{margin:.35rem 0 0}.cuzz-voice{margin:.2rem 0 0}}
